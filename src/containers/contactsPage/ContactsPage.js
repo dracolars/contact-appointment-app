@@ -40,6 +40,10 @@ export const ContactsPage = (props) => {
     }
   };
 
+  function handleRemove(name) {
+    props.handleRemoveContact(name);
+  }
+
   return (
     <div>
       <section>
@@ -57,7 +61,7 @@ export const ContactsPage = (props) => {
       <hr />
       <section>
         <h2>Contacts</h2>
-        <TileList items={contacts} />
+        <TileList items={contacts} handleRemove={handleRemove} />
       </section>
     </div>
   );

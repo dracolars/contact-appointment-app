@@ -41,8 +41,12 @@ export const AppointmentForm = ({
         required
       >
         <option value=""></option>
-        {contacts.map((contact) => {
-          return <option value={contact.name}>{contact.name}</option>;
+        {contacts.map((contact, index) => {
+          return (
+            <option key={index} value={contact.name}>
+              {contact.name}
+            </option>
+          );
         })}
       </select>
       <br />
@@ -53,6 +57,7 @@ export const AppointmentForm = ({
         name="date"
         value={date}
         onChange={(e) => setDate(e.target.value)}
+        min={getTodayString()}
         required
       />
       <br />

@@ -7,6 +7,7 @@ export const AppointmentsPage = ({
   appointments,
   contacts,
   addAppointment,
+  handleRemoveAppointment,
 }) => {
   const [name, setName] = useState("");
   const [contact, setContact] = useState({});
@@ -42,7 +43,7 @@ export const AppointmentsPage = ({
       <hr />
       <section>
         <h2>Appointments</h2>
-        <TileList items={appointments} />
+        <TileList items={appointments} handleRemove={handleRemoveAppointment} />
       </section>
     </div>
   );
