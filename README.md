@@ -4,7 +4,7 @@ A Codecademy project
 The idea for this project is to create stateful and stateless functional React components using hooks. 
 This app will manage contacts and appointments. It consists of two main pages: Contacts and Appointments, each with a form to add new entries.
 
-Live Demo: [contact-appointment-demo](contact-appointment-demo.netlify.app
+Live Demo: [contact-appointment-demo](https://contact-appointment-demo.netlify.app
 )
 
 ![contact page screenshot](/md-assets/conact-page.png)

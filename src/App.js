@@ -11,8 +11,8 @@ import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
 const initialContacts = [
-  { name: "Mangy Pup", phone: "(555) 222 4141", email: "mangy@puppy.com" },
-  { name: "Alex Test", phone: "(555) 222 4141", email: "alex@test.com" },
+  { name: "Mangy Pup", phone: "555 222 5555", email: "mangy@puppy.com" },
+  { name: "Alex Test", phone: "555 222 7777", email: "alex@test.com" },
 ];
 
 const initialAppointments = [

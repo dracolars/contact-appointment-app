@@ -95,7 +95,6 @@ select {
   justify-content: end;
   align-items: start;
   padding: 0;
-  width: 100%;
 }
 
 .delete-button p {
@@ -128,7 +127,7 @@ select {
 }
 
 .info-container {
-  width: 200px;
+  width: 90%;
 }
 
 .tile-list {
