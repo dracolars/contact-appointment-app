@@ -28,30 +28,6 @@ const initialAppointments = [
     date: "2023-05-25",
     time: "12:00",
   },
-  {
-    name: "Dog Walking",
-    contact: "Mangy Pup",
-    date: "2023-05-17",
-    time: "13:00",
-  },
-  {
-    name: "Dog Grooming",
-    contact: "Mangy Pup",
-    date: "2023-05-25",
-    time: "12:00",
-  },
-  {
-    name: "Dog Walking",
-    contact: "Mangy Pup",
-    date: "2023-05-17",
-    time: "13:00",
-  },
-  {
-    name: "Dog Grooming",
-    contact: "Mangy Pup",
-    date: "2023-05-25",
-    time: "12:00",
-  },
 ];
 
 function App() {
