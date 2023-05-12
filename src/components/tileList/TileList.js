@@ -7,7 +7,7 @@ export const TileList = ({ items, handleRemove }) => {
   sortAppointments();
 
   function sortAppointments() {
-    if (items[0].hasOwnProperty("date")) {
+    if (items[0]?.hasOwnProperty("date")) {
       itemsArray.sort(function (a, b) {
         a = a.date.split("-").join("") + a.time.split(":").join("");
         b = b.date.split("-").join("") + b.time.split(":").join("");

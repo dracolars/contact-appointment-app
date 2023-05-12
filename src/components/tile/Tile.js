@@ -28,7 +28,7 @@ export const Tile = ({ name, description, handleRemove }) => {
     let timeArray = time.split(":");
     let timeOfDay = timeArray[0] < 12 ? "AM" : "PM";
     let standardTime = timeArray[0] % 12;
-    if (timeArray[0] === 12) {
+    if (timeArray[0] === "12") {
       standardTime = "12";
     }
     return `${standardTime}:${timeArray[1]} ${timeOfDay} `;
@@ -57,8 +57,8 @@ export const Tile = ({ name, description, handleRemove }) => {
       <div className="tile-container">
         <div className="info-container">
           <p className="tile tile-title">{name}</p>
-          <p className="tile tile-date">{description.contact}</p>
-          <p className="tile tile-date">{` ${formatedDate} ${formatedTime}`}</p>
+          <p className="tile tile-contact">{description.contact}</p>
+          <p className="tile tile-date">{`${formatedDate} ${formatedTime}`}</p>
         </div>
         <div className="delete-button">
           <p onClick={handleRemoval}></p>

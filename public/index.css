@@ -32,9 +32,6 @@ h2 {
   margin-bottom: 18px;
 }
 
-section {
-}
-
 hr {
   border: none;
   border-top: 1px solid #979797;
@@ -42,7 +39,22 @@ hr {
 }
 
 form {
-  width: 450px;
+  width: 50%;
+  min-width: 300px;
+}
+
+input,
+select {
+  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  padding: 7px 9.5px 9px 9.5px;
+  outline: none;
+  width: 300px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  height: 2.75em;
 }
 
 input[type="submit"] {
@@ -55,23 +67,16 @@ input[type="submit"] {
   outline: none;
   padding: 10px 0;
   width: 150px;
+  min-width: 150px;
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
   margin: 10px auto;
   text-align: center;
 }
 
-input,
-select {
-  font-family: "Open Sans", sans-serif;
-  background: #ffffff;
-  border: 1px solid #979797;
-  border-radius: 4px;
-  padding: 7px 9.5px 9px 9.5px;
-  outline: none;
-  width: 320px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
+input[type="submit"]:hover {
+  background-color: #609966;
+  color: white;
 }
 
 .contact-form label,
@@ -115,6 +120,7 @@ select {
 
 .delete-button p:hover {
   background-color: #609966;
+  color: white;
 }
 
 .tile-container {
@@ -123,11 +129,15 @@ select {
   padding: 10px;
   background-color: #edf1d6;
   border-radius: 4px;
-  max-width: 310px;
+  width: 270px;
+}
+
+.tile-date {
+  margin-top: 1em;
 }
 
 .info-container {
-  width: 90%;
+  width: 95%;
 }
 
 .tile-list {
@@ -137,31 +147,19 @@ select {
   row-gap: 20px;
 }
 
-@media screen and (max-width: 1800px) and (min-width: 1500px) {
-  .tile-list {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-@media screen and (max-width: 1500px) and (min-width: 1200px) {
+@media screen and (max-width: 1900px) and (min-width: 1200px) {
   .tile-list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 900px) {
-  .tile-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width: 1200px) and (min-width: 650px) {
   .tile-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 600px) and (min-width: 0) {
+@media screen and (max-width: 650px) and (min-width: 0) {
   .tile-list {
     grid-template-columns: repeat(1, 1fr);
   }

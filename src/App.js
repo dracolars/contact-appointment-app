@@ -12,7 +12,7 @@ import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
 const initialContacts = [
   { name: "Mangy Pup", phone: "555 222 5555", email: "mangy@puppy.com" },
-  { name: "Alex Test", phone: "555 222 7777", email: "alex@test.com" },
+  { name: "Luigi's Pizza", phone: "555 222 7777", email: "luigi@pizzeria.com" },
 ];
 
 const initialAppointments = [
@@ -29,10 +29,28 @@ const initialAppointments = [
     time: "12:00",
   },
   {
-    name: "Testing App",
-    contact: "Alex Test",
-    date: "2023-05-10",
-    time: "14:30",
+    name: "Dog Walking",
+    contact: "Mangy Pup",
+    date: "2023-05-17",
+    time: "13:00",
+  },
+  {
+    name: "Dog Grooming",
+    contact: "Mangy Pup",
+    date: "2023-05-25",
+    time: "12:00",
+  },
+  {
+    name: "Dog Walking",
+    contact: "Mangy Pup",
+    date: "2023-05-17",
+    time: "13:00",
+  },
+  {
+    name: "Dog Grooming",
+    contact: "Mangy Pup",
+    date: "2023-05-25",
+    time: "12:00",
   },
 ];
 
@@ -47,6 +65,12 @@ function App() {
 
   function handleRemoveContact(name) {
     console.log("you want to remove " + name);
+    let removalIndex = contacts.findIndex((contact) => {
+      return contact.name === name;
+    });
+    let newContacts = contacts.slice();
+    newContacts.splice(removalIndex, 1);
+    setContacts(newContacts);
   }
 
   function handleAddAppointment(name, contact, date, time) {
